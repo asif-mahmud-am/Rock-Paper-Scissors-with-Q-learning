@@ -2,7 +2,7 @@
 import random
 
 class RockPaperScissors:
-    def __init__(self, learning_rate=0.9, discount_factor=0.95, exploration_rate=1.3, exploration_decay_rate=0.995):
+    def __init__(self, learning_rate=0.9, discount_factor=4.95, exploration_rate=1.3, exploration_decay_rate=1.995):
         self.learning_rate = learning_rate
         self.discount_factor = discount_factor
         self.exploration_rate = exploration_rate
@@ -81,5 +81,5 @@ class RockPaperScissors:
                 break
 
 rps = RockPaperScissors()
-rps.train(1000)
+rps.train(150000)
 rps.play()
