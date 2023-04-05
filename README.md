@@ -2,7 +2,7 @@
 This is the first version of a Python implementation of the classic game of Rock-Paper-Scissors using the Q-learning algorithm. The Q-learning algorithm is a reinforcement learning technique that learns an optimal policy for an agent by estimating the expected rewards for each state-action pair.
 
 # What it does
-This program allows the user to train an agent to play Rock-Paper-Scissors against a randomly choosing opponent using the Q-learning algorithm. After training, the agent can play the game against a human player.
+This program allows the user to train an agent to play Rock-Paper-Scissors against a randomly choosing opponent using the Q-learning algorithm. After training, the agent can play the game against a human player. Keep in mind that due to the randomness of the game, the agent will not always be able to defeat the player. 
 
 # How it works
 The program starts by initializing the Q-table, which is a dictionary that stores the Q-values for each state-action pair. The Q-values represent the expected reward for each action in each state, which the agent uses to choose the best action.
