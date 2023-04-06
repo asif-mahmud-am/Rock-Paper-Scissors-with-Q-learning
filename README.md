@@ -12,7 +12,7 @@ During training, the agent updates the Q-table based on the rewards obtained fro
 After training, the agent can play the game against a human player. The agent chooses its action based on the Q-values in the Q-table, and the human player chooses their action via input. The agent updates the Q-table after each game, and the exploration rate may be decayed over time to reduce exploration.
 
 # Usage
-To use this program, cd into the folder and simply run the train.py file in a Python environment.
+To use this program, cd into the folder and simply run the train.py file or run the file in a Python environment.
 ```
 $ git clone https://github.com/matriley/Rock-Paper-Scissors-with-Q-learning.git
 $ python3 train.py
