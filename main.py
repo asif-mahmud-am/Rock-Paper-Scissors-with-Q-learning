@@ -30,10 +30,9 @@ async def play(player_action: int):
         result = "You win!"
         reward = 1
 
-    print(result, reward)
+    print(result)
     next_state = (opponent_action, player_action)
     rps.update_q_table(state, player_action, reward, next_state)
     state = next_state
 
-    response = {"result": result, "reward": reward, "state": state}
-    return response
+    return opponent_action
