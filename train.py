@@ -82,4 +82,4 @@ class RockPaperScissors:
 
 rps = RockPaperScissors()
 rps.train(150000)
-rps.play()
+# rps.play()

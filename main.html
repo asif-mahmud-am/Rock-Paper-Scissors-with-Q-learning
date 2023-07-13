@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RoShamBo</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+	<div class="page">
+		<h1 class="title">Rock Paper Scissors</h1>
+		<div class="score-board">
+			<div class="won">
+				<div class="won-title">WON</div>
+				<div class="won-score">0</div>
+			</div>
+			<div class="lost">
+				<div class="lost-title">LOST</div>
+				<div class="lost-score">0</div>
+			</div>
+			<div class="tied">
+				<div class="tied-title">TIED</div>
+				<div class="tied-score">0</div>
+			</div>
+		</div>
+		<button class="new-game">Reset Score</button>
+		<div class="board">
+			<div class="user-board">
+				<button class="js-button" onclick="play(0);"><img src="images/rock.png" class="emoji"></button>
+				<button class="js-button" onclick="play(1);"><img src="images/paper.png" class="emoji"></button>
+				<button class="js-button" onclick="play(2);"><img src="images/scissors.png" class="emoji"></button>
+			</div>
+			<div class="computer-board">
+				<button class="computer-outcome"></button>
+			</div>
+		</div>
+		<div class="result"></div>
+	</div>
+	<script type="text/javascript" src="scripts/main.js"></script>
+</body>
+</html>
