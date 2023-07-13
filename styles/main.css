@@ -1,0 +1,88 @@
+.page {
+  width: 1000px;
+  text-align: center;
+  margin: auto;
+}
+
+.title {
+  font-size: 60px;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.score-board {
+  position: absolute;
+  top: 105px;
+  right: 500px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  margin: 20px;
+}
+
+.won,
+.lost,
+.tied {
+  margin: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid #333;
+  justify-content: center;
+  text-align: center;
+}
+
+.won-title,
+.lost-title,
+.tied-title {
+  font-size: 13px;
+}
+
+.won-score,
+.lost-score,
+.tied-score {
+  font-size: 25px;
+}
+
+.new-game {
+  position: absolute;
+  top: 230px;
+  right: 530px;
+  height: 40px;
+  border: 1px;
+  font-size: 20px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.js-button,
+.computer-outcome {
+  width: 120px;
+  height: 120px;
+  border-radius: 60px;
+  margin: 20px;
+  font-weight: bold;
+  font-size: 20px;
+  border: 5px solid black;
+  cursor: pointer;
+}
+
+.emoji {
+  height: 60px;
+  background-color: transparent;
+}
+
+.result {
+  padding-top: 40px;
+  font-weight: bold;
+  text-align: center;
+  font-size: 25px;
+}
