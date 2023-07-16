@@ -17,14 +17,14 @@ state = (0, 0)
 
 
 @app.post("/play")
-async def play(player_action: int):
+async def play(player_action: int, session: int):
     global state
     if player_action not in [0, 1, 2]:
         return JSONResponse(
             {"error": "Invalid move! Please enter 0, 1, or 2."}, status_code=400
         )
 
-    opponent_action = rps.get_action(state)
+    opponent_action = rps.get_action(session, state)
     if player_action == opponent_action:
         result = "It's a tie!"
         reward = 0
@@ -41,7 +41,7 @@ async def play(player_action: int):
 
     print(result)
     next_state = (opponent_action, player_action)
-    rps.update_q_table(state, player_action, reward, next_state)
+    rps.update_q_table(session, state, player_action, reward, next_state)
     state = next_state
 
     return opponent_action
