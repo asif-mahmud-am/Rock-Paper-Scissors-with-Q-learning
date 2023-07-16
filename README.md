@@ -1,9 +1,11 @@
 # Rock Paper Scissors
 
 The 3 sectors of this project are as follows:
-- The ML algorithm that stems from Q-learning
+- ML algorithm: stems from Q-learning
 - Backend: FastAPI application
 - Frontend: HTML, CSS, JavaScript
+
+We have also added *persistent session storage* in the backend so the algorithm can separate from user to user.
 
 ### Run
 ```bash
