@@ -2,9 +2,21 @@ const url = "http://localhost:8000/play";
 
 const score = {0: "rock", 1: "paper", 2: "scissors"};
 
+let sessionID = localStorage.getItem('sessionID') || 999;
+
 document.querySelector(".new-game").addEventListener("click", function() {
     location.reload();
 });
+
+window.onload = function () {
+    updateSessionID();
+};
+
+function updateSessionID () {
+    sessionID ++;
+    localStorage.setItem("sessionID", sessionID);
+    console.log(sessionID);
+}
 
 function compImage (comp) {
     document.querySelector(".computer-outcome").innerHTML = `
@@ -12,7 +24,7 @@ function compImage (comp) {
 }
 
 async function play (user) {
-    const param = {params: {player_action : Number(user)}};
+    const param = {params: {player_action : Number(user), session : sessionID}};
     const response = await axios.post(url, null, param);
     const compResult = await response.data;        
 
